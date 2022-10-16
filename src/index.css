@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form span {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+input {
+  min-width: 200px;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form button {
+  cursor: pointer;
+  min-width: 200px;
+  margin: 16px 0 32px;
+  padding: 8px;
+  background: #fff;
+  border: 2px solid #1d1d1d;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contacts li {
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.delete {
+  cursor: pointer;
+  font-size: 12px;
+  padding: 2px 4px;
+  background: #fff;
+  border: 2px solid #1d1d1d;
+  border-radius: 4px;
+  margin-left: 8px;
+}
