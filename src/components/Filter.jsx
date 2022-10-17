@@ -1,9 +1,17 @@
+import { useState } from 'react';
 import { PropTypes } from 'prop-types';
+import { useEffect } from 'react';
 
-export const Filter = ({ searchHandler, filter }) => {
+export const Filter = ({ searchHandler }) => {
+  const [filter, setFilter] = useState('');
+
+  useEffect(() => {
+    searchHandler(filter);
+  }, [filter, searchHandler]);
+
   return (
     <input
-      onChange={searchHandler}
+      onChange={e => setFilter(e.target.value)}
       value={filter}
       type="text"
       placeholder="Search"
@@ -14,5 +22,4 @@ export const Filter = ({ searchHandler, filter }) => {
 
 Filter.propTypes = {
   searchHandler: PropTypes.func.isRequired,
-  filter: PropTypes.string.isRequired,
 };
